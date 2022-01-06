@@ -30,6 +30,7 @@ namespace SeleniumTest1
                 sw = new StreamWriter("E:\\FT\\SeleniumTest\\SC\\GWES_Test_Baseline.txt");
                 RunTest(driver, wait, "http://w12publictest/TrustPortal/secure/login.aspx?p=1", true, "anunay", "022589", sw);
                 sw.Close();
+
                 driver.Quit();
             }
             using (IWebDriver driverNew = new ChromeDriver())
